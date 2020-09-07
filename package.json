@@ -40,6 +40,7 @@
     "react-spring": "^8.0.27",
     "react-text-mask": "^5.4.3",
     "react-tooltip": "^4.2.8",
+    "serve": "^11.3.2",
     "styled-components": "^5.1.0",
     "sweetalert2": "^9.17.0",
     "typescript": "~3.7.2",
@@ -47,7 +48,8 @@
     "yup": "^0.28.4"
   },
   "scripts": {
-    "start": "react-scripts start .env",
+    "start": "node_modules/.bin/serve -s build",
+    "dev": "react-scripts start .env",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
